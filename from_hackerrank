@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sum1,substract1;
+    double sum2,substract2;
+    int a=10, b=4;
+    double c=4.0, d=2.0;
+    
+	printf("%d %d",a,b);
+   
+    
+    printf("%f %f",c,d);
+  
+    
+    sum1=a+b;
+    printf("Sum1 is: %d",sum1);
+    
+    substract1=a-b;
+    printf("Substract is: %d", substract1);
+    
+    sum2=c+d;
+    printf("Sum2 is: %f",sum2);
+    
+    substract2=c-d;
+    printf("Substract2 is: %f", substract2);
+    
+    
+    
+    return 0;
+    
+    
+    
+}
