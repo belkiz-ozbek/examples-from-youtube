@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main ()
+{
+	int mesai;
+	int ucret;
+	
+	printf("Lutfen mesai saatini giriniz: ");
+	scanf("%d",&mesai);
+	
+	if(mesai<10){
+		ucret=mesai*5;
+			printf("Ucretiniz %d TL",ucret);
+	}
+		
+	else if(mesai<=10 && mesai>=20){
+		ucret=9*5+3*(mesai-9);
+			printf("Ucretiniz %d TL",ucret);
+	}
+	else
+		ucret=5*9+3*11+(mesai-20)*2;
+				printf("Ucretiniz %d TL",ucret);
+
+	
+	
+}
