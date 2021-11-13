@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main ()
+{
+// 100 den 20 ye kadar 7 ve 3 e tam bolunen sayıları büyükten küçüğe giriniz
+
+int i;
+
+for(i=100; i>=20; i--){
+	if(i%3==0 && i%7==0)
+		printf(" %d",i);
+}
+int a=100;
+while(20<=a){
+	if(a%3==0 && a%7==0)
+		printf(" %d",a);
+		a--;
+}
+
+
+}
