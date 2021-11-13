@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main ()
+{
+	int nnot;
+	
+		printf("Notunuzun sayisal degerini giriniz: ");
+		scanf("%d",&nnot);
+	
+	if(nnot>=90)
+
+		printf("Notunuz AA dir.");
+		else if(nnot>80)
+			printf("Notunuz BA dir");
+		else if(nnot>70)
+			printf("Notunuz BB dir");
+		else
+			printf("Notunuz FF dir");
+	
+	
+}
