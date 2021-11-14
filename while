@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main (){
+
+int girilen=0;
+int eb=0;
+
+while(girilen!=-1){
+	printf("bir sayi giriniz: ");
+	scanf("%d",&girilen);
+	if(girilen>eb)
+		eb=girilen;
+	
+}
+printf("en buyuk sayimiz %d dir.",eb);
+
+}
