@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main (){
+// kullanıcı -1 girene kadar girilen sayilarin ortalamasini bulunuz.
+
+int sum=0;
+int n=0;
+int ort; 
+int girilen=0.0;
+
+while(girilen!=-1){
+	printf("bir sayi giriniz: ");
+	scanf("%d",&girilen);
+		n++;
+		sum+=girilen;
+}
+n--;
+sum++;
+ort=sum/n;
+  printf("kac sayi girildi: %d sum: %d ort: %d",n,sum,ort);
+
+}
+
+
+
