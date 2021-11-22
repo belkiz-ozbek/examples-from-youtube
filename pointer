@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	int a=5, *ap;
+	float b=3.2, *bp;
+	double c=3.43, *cp;
+	char d='a',*dp;
+	
+	ap=&a;
+	bp=&b;
+	cp=&c;
+	dp=&d;
+	
+	printf("\n%p adresindeki intin degeri %d dir.",ap,*ap);
+	printf("\n%p adresindeki floatin degeri %f dir.",bp,*bp);
+	printf("\n%p adresindeki double degeri %lf dir.",cp,*cp);
+	printf("\n%p adresindeki char degeri %c dir.",dp,*dp);
+
+}
