@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int func(int);
+
+int main (void)
+{
+	int x;
+	printf("Enter a number: ");
+	scanf("%d",&x);
+	printf("sayinin faktoriyeli: %d",func(x));
+}
+
+int func(int x)
+{
+	int i,sonuc=1;
+	for(i=1; i<=x; i++){
+		sonuc*=i;
+	}
+return sonuc;	
+}
+
+
