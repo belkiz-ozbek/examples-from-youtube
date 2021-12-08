@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	int x=15, y=23;
+	int *a,*b;
+	
+	a=&x;
+	b=&y;
+	
+	printf("x'in degeri: %d - adresi: %p\n",*a,a);
+	printf("y'nin degeri: %d - adresi: %p",*b,b);
+	
+	
+	return 0;
+}
