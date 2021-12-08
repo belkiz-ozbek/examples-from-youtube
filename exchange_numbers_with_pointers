@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Pointer - Sayıları yer değiştiren program
+
+	int x=26,y=74,gecici;
+	int *a,*b;
+	
+	printf("x=%d - y=%d",x,y);	
+	printf("\nPointerden Sonra\n");
+	
+	a=&x;
+	b=&y;
+	gecici=*a;
+	*a=*b;
+	*b=gecici;
+	printf("x=%d - y=%d",x,y);
+	
+	
+	return 0;
+}
