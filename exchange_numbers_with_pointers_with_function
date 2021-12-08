@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Pointer - Fonksiyon kullanarak sayilari ters çeviren program
+
+	int degis(int *a,int *b){
+		int gecici;
+		gecici=*a;
+		*a=*b;
+		*b=gecici;
+	}
+	int main(){
+		int x=24,y=45;
+		int *a,*b;
+		
+		printf("x:%d - y:%d",x,y);
+		a=&x;
+		b=&y;
+		
+		degis(&x,&y);
+		printf("\nPointerden Sonra\n");
+		printf("x:%d - y:%d",x,y);
+		
+	}
