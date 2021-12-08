@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+//pointer değere başka bir sayı atamak
+int main() {
+	
+int x,y;
+int *a,*b;
+
+printf("Sayiyi giriniz: ");
+scanf("%d",&x);
+
+printf("\n\nSayi:%d",x);
+a=&x;
+*a=27;
+
+printf("\nSayi(pointerden sonraki): %d",x);
+	
+	return 0;
+}
