@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	int a=5, *ap;
+	double b=3.2, *bp;
+	float c=3.455, *cp;
+	char d='a', *dp;
+	
+	int sayi[5]={1,2,3,4,5};
+	
+	int *arrayp;
+	
+	ap=&a;
+	bp=&b;
+	cp=&c;
+	dp=&d;
+	arrayp=&sayi[1];
+	
+	printf("%u adresindeki sayinin degeri %d dir\n",ap,*ap);
+	printf("%u adresindeki sayinin degeri %lf dir\n",bp,*bp);
+	printf("%u adresindeki sayinin degeri %f dir\n",cp,*cp);
+	printf("%u adresindeki karakterin degeri %c dir\n",dp,*dp);
+	printf("%u adresindeki sayinin elemaninin degeri %d dir\n",arrayp,*arrayp);
+	
+	return 0;
+}
