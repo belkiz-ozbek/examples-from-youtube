@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// pointer with array
+
+
+int main(int argc, char *argv[]) {
+
+int sayilar[5]={1,2,3,4,5};
+
+int *p = sayilar;						// int *p = sayilar; && int *p = &sayilar[0]; "THESE EXPRESSİONS PROVİDE THE SAME FUNCTİON"  (function is 'işlev' in Turkish) 
+	
+	printf("%u\n",p);  
+	printf("%u\n",p+1);
+	printf("%u\n",p+2);
+	printf("%u\n",p+3);
+	
+/*	printf("%d\n",*p);
+	printf("%d\n",*(p+1));              // *(p+1) ---------> p[1]
+	printf("%d\n",*(p+2));
+	printf("%d\n",*(p+3));
+	printf("%d\n",*(p+4));
+*/
+
+	printf("%d\n",p[0]);
+	printf("%d\n",p[1]);
+	printf("%d\n",p[2]);
+	printf("%d\n",p[3]);
+	printf("%d\n",p[4]);
+	
+	return 0;
+}
